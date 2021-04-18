@@ -1,0 +1,44 @@
+.Card{
+  position: relative;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+img{
+  display: block;
+  max-width: 500px;
+  min-width: 350px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.Card_overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+}
+
+.Card:hover .Card_overlay{
+  opacity: 1;
+  visibility: visible;
+  transition: .5s ease;
+}
+
+.Card:hover img{
+  opacity: 0.95;
+}
+
+.cards_classify{
+  margin: 10px;
+  color: black;
+  padding: 10px;
+  font-size: 15px;
+  position: absolute;
+  text-align: right;
+}
